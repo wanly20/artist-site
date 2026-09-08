@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleo Pond — Hand-drawn Illustration</title>
+  <meta name="description" content="Cleo Pond draws peculiar folk, sleepy animals, and tiny worlds that live somewhere between a dream and a sketchbook." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ─── Nav ─── -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#home">Cleo Pond</a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" data-section="home" href="#home">Home</a>
+        <a class="nav__link" data-section="gallery" href="#gallery">Gallery</a>
+        <a class="nav__link" data-section="about" href="#about">About</a>
+        <a class="nav__link" data-section="shop" href="#shop">Shop</a>
+        <a class="nav__cara" href="https://cara.app/cleopond" target="_blank" rel="noopener noreferrer">
+          Cara
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M 2 10 L 10 2 M 4 2 L 10 2 L 10 8" stroke="#1c1714" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </nav>
+
+      <button class="nav__burger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="mobile-menu">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#shop">Shop</a>
+      <a class="nav__mobile-cara" href="https://cara.app/cleopond" target="_blank" rel="noopener noreferrer">Find me on Cara ↗</a>
+    </div>
+  </header>
+
+  <main data-spy>
+
+    <!-- ─── Hero ─── -->
+    <section id="home" class="hero">
+      <div class="hero__text">
+        <div class="tag-pill">
+          <span class="dot"></span>
+          <span class="label">hand-drawn illustration</span>
+        </div>
+
+        <h1>Peculiar<br /><em>creatures</em><br />&amp; soft worlds</h1>
+
+        <svg class="squiggle" width="160" height="12" viewBox="0 0 160 12" fill="none" aria-hidden="true">
+          <path d="M 0 6 Q 16 1 32 6 Q 48 11 64 6 Q 80 1 96 6 Q 112 11 128 6 Q 144 1 160 6" stroke="#d4552a" stroke-width="2.5" stroke-linecap="round" />
+        </svg>
+
+        <p class="hero__lead">
+          I draw peculiar folk, sleepy animals, and tiny worlds that live somewhere
+          between a dream and a sketchbook.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#gallery">See the Gallery</a>
+          <a class="btn btn--ghost" href="https://cara.app/cleopond" target="_blank" rel="noopener noreferrer">
+            Follow on Cara
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M 2 10 L 10 2 M 4 2 L 10 2 L 10 8" stroke="#1c1714" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero__spray" aria-hidden="true">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <circle cx="12" cy="20" r="3.5" fill="#d4552a" />
+            <circle cx="65" cy="15" r="2.5" fill="#d4552a" opacity="0.7" />
+            <circle cx="70" cy="55" r="4" fill="#d4552a" />
+            <circle cx="30" cy="70" r="2" fill="#d4552a" opacity="0.6" />
+            <circle cx="8" cy="60" r="3" fill="#d4552a" opacity="0.8" />
+            <path d="M 42 10 L 43.5 15 L 49 15 L 44.5 18.5 L 46 24 L 42 20.5 L 38 24 L 39.5 18.5 L 35 15 L 40.5 15 Z" fill="#d4552a" opacity="0.85" />
+            <path d="M 20 40 L 21 43 L 24 43 L 21.5 45 L 22.5 48 L 20 46 L 17.5 48 L 18.5 45 L 16 43 L 19 43 Z" fill="#d4552a" opacity="0.6" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero__art">
+        <div class="blob-frame">
+          <img src="images/hero-character.png" alt="Placeholder illustration of Cleo Pond's hero character" />
+        </div>
+        <div class="hero__star hero__star--tr" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <path d="M 15 2 L 17 11 L 26 11 L 19 17 L 22 26 L 15 20 L 8 26 L 11 17 L 4 11 L 13 11 Z" fill="#d4552a" />
+          </svg>
+        </div>
+        <div class="hero__star hero__star--bl" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M 10 1 L 11.5 7.5 L 18 7.5 L 12.5 11.5 L 14.5 18 L 10 14 L 5.5 18 L 7.5 11.5 L 2 7.5 L 8.5 7.5 Z" fill="#7a9e7e" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Gallery ─── -->
+    <section id="gallery" class="section section--rules" style="background-color:#fdf7f0;">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">The Work</p>
+          <h2>The Characters</h2>
+          <svg class="squiggle" width="100" height="12" viewBox="0 0 100 12" fill="none" aria-hidden="true">
+            <path d="M 0 6 Q 10 1 20 6 Q 30 11 40 6 Q 50 1 60 6 Q 70 11 80 6 Q 90 1 100 6" stroke="#d4552a" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+          <p class="note">A selection of folk, creatures, and beings from recent sketchbooks.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <a class="card" href="artwork/marshmallow-witch.html" style="background-color:#e8c0aa;">
+            <div class="card__art"><img src="images/marshmallow-witch.png" alt="Marshmallow Witch" /></div>
+            <div class="card__label"><h3>Marshmallow Witch</h3><p>Character</p></div>
+          </a>
+          <a class="card" href="artwork/fox-at-dusk.html" style="background-color:#e8c888;">
+            <div class="card__art"><img src="images/fox-at-dusk.png" alt="Fox at Dusk" /></div>
+            <div class="card__label"><h3>Fox at Dusk</h3><p>Night Folk Series</p></div>
+          </a>
+          <a class="card" href="artwork/mushroom-mayor.html" style="background-color:#c4d8a0;">
+            <div class="card__art"><img src="images/mushroom-mayor.png" alt="Mushroom Mayor" /></div>
+            <div class="card__label"><h3>Mushroom Mayor</h3><p>Character</p></div>
+          </a>
+          <a class="card" href="artwork/cloud-rider-no-3.html" style="background-color:#b4c8e0;">
+            <div class="card__art"><img src="images/cloud-rider.png" alt="Cloud Rider No.3" /></div>
+            <div class="card__label"><h3>Cloud Rider No.3</h3><p>Sky Things Series</p></div>
+          </a>
+          <a class="card" href="artwork/the-ink-collector.html" style="background-color:#e8e0b8;">
+            <div class="card__art"><img src="images/ink-collector.png" alt="The Ink Collector" /></div>
+            <div class="card__label"><h3>The Ink Collector</h3><p>Character</p></div>
+          </a>
+          <a class="card" href="artwork/deep-dream-fish.html" style="background-color:#a8c8c0;">
+            <div class="card__art"><img src="images/deep-dream-fish.png" alt="Deep Dream Fish" /></div>
+            <div class="card__label"><h3>Deep Dream Fish</h3><p>Ocean Pals Series</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── About ─── -->
+    <section id="about" class="section">
+      <div class="wrap about-grid">
+        <div class="about__art">
+          <div class="blob-frame">
+            <img src="images/mushroom-mayor.png" alt="Placeholder portrait illustration" />
+          </div>
+        </div>
+
+        <div class="about__text">
+          <p class="eyebrow">The Artist</p>
+          <h2>Hi, I'm <em>Cleo</em></h2>
+          <svg class="squiggle" width="80" height="12" viewBox="0 0 80 12" fill="none" aria-hidden="true">
+            <path d="M 0 6 Q 8 1 16 6 Q 24 11 32 6 Q 40 1 48 6 Q 56 11 64 6 Q 72 1 80 6" stroke="#1c1714" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+          <p>
+            I'm an illustrator who draws soft creatures, peculiar folk, and little worlds
+            you can get lost in. Everything starts as a pencil sketch — the wobbly lines
+            and unexpected shapes are the whole point.
+          </p>
+          <p>
+            My characters tend to find each other across different pieces — you might spot
+            the Witch chatting with the Mushroom Mayor if you look carefully.
+          </p>
+          <a class="btn btn--paper" href="https://cara.app/cleopond" target="_blank" rel="noopener noreferrer">
+            See my full portfolio on Cara
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M 2 10 L 10 2 M 4 2 L 10 2 L 10 8" stroke="#1c1714" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Shop ─── -->
+    <section id="shop" class="section section--paper">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">The Shop</p>
+          <h2>Take one home</h2>
+          <svg class="squiggle" width="100" height="12" viewBox="0 0 100 12" fill="none" aria-hidden="true">
+            <path d="M 0 6 Q 10 1 20 6 Q 30 11 40 6 Q 50 1 60 6 Q 70 11 80 6 Q 90 1 100 6" stroke="#7a9e7e" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <div class="shop__stage">
+          <div class="shop__blur" aria-hidden="true">
+            <div class="shop-item" style="background-color:#e8c0aa;"><div class="shop-item__ph"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="25" r="16" fill="#fdf7f0" stroke="#1c1714" stroke-width="2"/><rect x="15" y="38" width="30" height="18" rx="6" fill="#fdf7f0" stroke="#1c1714" stroke-width="2"/></svg></div><h4>Witch Print</h4><p>$18</p></div>
+            <div class="shop-item" style="background-color:#e8c888;"><div class="shop-item__ph"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="25" r="16" fill="#fdf7f0" stroke="#1c1714" stroke-width="2"/><rect x="15" y="38" width="30" height="18" rx="6" fill="#fdf7f0" stroke="#1c1714" stroke-width="2"/></svg></div><h4>Fox Sticker Pack</h4><p>$9</p></div>
+            <div class="shop-item" style="background-color:#c4d8a0;"><div class="shop-item__ph"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="25" r="16" fill="#fdf7f0" stroke="#1c1714" stroke-width="2"/><rect x="15" y="38" width="30" height="18" rx="6" fill="#fdf7f0" stroke="#1c1714" stroke-width="2"/></svg></div><h4>Mushroom Mayor Tote</h4><p>$34</p></div>
+            <div class="shop-item" style="background-color:#b4c8e0;"><div class="shop-item__ph"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="25" r="16" fill="#fdf7f0" stroke="#1c1714" stroke-width="2"/><rect x="15" y="38" width="30" height="18" rx="6" fill="#fdf7f0" stroke="#1c1714" stroke-width="2"/></svg></div><h4>Character Postcard Set</h4><p>$12</p></div>
+            <div class="shop-item" style="background-color:#e8e0b8;"><div class="shop-item__ph"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="25" r="16" fill="#fdf7f0" stroke="#1c1714" stroke-width="2"/><rect x="15" y="38" width="30" height="18" rx="6" fill="#fdf7f0" stroke="#1c1714" stroke-width="2"/></svg></div><h4>Cloud Rider Enamel Pin</h4><p>$15</p></div>
+            <div class="shop-item" style="background-color:#a8c8c0;"><div class="shop-item__ph"><svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="25" r="16" fill="#fdf7f0" stroke="#1c1714" stroke-width="2"/><rect x="15" y="38" width="30" height="18" rx="6" fill="#fdf7f0" stroke="#1c1714" stroke-width="2"/></svg></div><h4>Sketchbook Zine Vol.1</h4><p>$22</p></div>
+          </div>
+
+          <div class="shop__overlay">
+            <div class="coming-soon">
+              <div class="coming-soon__emoji">🏗️</div>
+              <h3>Coming <em>Soon</em></h3>
+              <svg class="squiggle" width="80" height="12" viewBox="0 0 80 12" fill="none" aria-hidden="true">
+                <path d="M 0 6 Q 8 1 16 6 Q 24 11 32 6 Q 40 1 48 6 Q 56 11 64 6 Q 72 1 80 6" stroke="#d4552a" stroke-width="2.5" stroke-linecap="round" />
+              </svg>
+              <p>
+                Prints, stickers, zines &amp; more — the shop is being built! Drop your
+                email and I'll send you one note when it opens.
+              </p>
+
+              <form data-notify novalidate>
+                <div class="notify__row">
+                  <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+                  <button type="submit">Get Notified</button>
+                </div>
+                <p class="notify__error" role="alert"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <p>Cleo Pond</p>
+        <p>Hand-drawn illustration · <span data-year>2026</span></p>
+      </div>
+
+      <a class="footer__cara" href="https://cara.app/cleopond" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5" stroke="#f5ede0" stroke-width="2" />
+          <circle cx="12" cy="12" r="4" stroke="#f5ede0" stroke-width="2" />
+          <circle cx="17.5" cy="6.5" r="1.5" fill="#f5ede0" />
+        </svg>
+        Follow on Cara
+        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M 2 10 L 10 2 M 4 2 L 10 2 L 10 8" stroke="#f5ede0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.querySelectorAll('[data-year]').forEach(function (n) { n.textContent = new Date().getFullYear(); });</script>
+</body>
+</html>
