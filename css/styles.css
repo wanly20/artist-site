@@ -728,3 +728,5 @@ button { font-family: inherit; }
   .footer__inner { flex-direction: column; align-items: flex-start; }
   .artwork__nav a { max-width: 100%; }
 }
+
+.footer__cara-logo { width: 20px; height: 20px; border-radius: 50%; box-shadow: 0 0 0 1px rgba(245, 237, 224, 0.35); }
