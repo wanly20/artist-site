@@ -550,6 +550,15 @@ button { font-family: inherit; }
   font-size: 15px;
 }
 
+.notify__powered { margin-top: 10px; text-align: center; }
+.notify__powered a {
+  font-size: 11px;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.notify__powered a:hover { color: var(--ink); }
+
 /* ── Footer ────────────────────────────────────────────────────────────── */
 
 .footer {

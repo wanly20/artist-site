@@ -2,7 +2,8 @@
    Cleo Pond — static site behaviour
    - mobile nav toggle
    - scrollspy for active nav link (home page only)
-   - "notify me" form (client-side only, no backend yet)
+   - "notify me" form — posts to the form's own action (a Kit/ConvertKit
+     inline-form endpoint) via fetch, no page reload
    ========================================================================= */
 
 (function () {
@@ -55,40 +56,76 @@
     });
   }
 
-  /* ── Notify form ─────────────────────────────────────────────────────── */
-  var form = document.querySelector('[data-notify]');
-
-  if (form) {
-    var input = form.querySelector('input[type="email"]');
+  /* ── Notify form(s) ───────────────────────────────────────────────────── */
+  // Any <form data-notify action="..." method="post"> with an
+  // input[name="email_address"] is wired up the same way — there can be
+  // more than one on a page (e.g. a comparison preview).
+  document.querySelectorAll('[data-notify]').forEach(function (form) {
+    var input = form.querySelector('input[name="email_address"]');
     var errorEl = form.querySelector('.notify__error');
-    var wrapper = form.parentElement;
+    var submitBtn = form.querySelector('button[type="submit"]');
+
+    if (!input) return;
+
+    function showSuccess() {
+      var success = document.createElement('div');
+      success.className = 'notify__success';
+      success.innerHTML =
+        '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">' +
+        '<path d="M 3 9 L 7 13 L 15 5" stroke="#1c1714" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+        '</svg><p>Almost there — check your inbox to confirm your subscription.</p>';
+      form.replaceWith(success);
+    }
+
+    function showError(message) {
+      if (!errorEl) return;
+      errorEl.textContent = message;
+    }
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var value = (input.value || '').trim();
 
       if (value.indexOf('@') === -1 || value.indexOf('.') === -1) {
-        if (errorEl) errorEl.textContent = 'Please enter a valid email.';
+        showError('Please enter a valid email.');
         input.focus();
         return;
       }
-      if (errorEl) errorEl.textContent = '';
+      showError('');
 
-      // No backend yet — swap the form for a confirmation message.
-      var success = document.createElement('div');
-      success.className = 'notify__success';
-      success.innerHTML =
-        '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">' +
-        '<path d="M 3 9 L 7 13 L 15 5" stroke="#1c1714" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>' +
-        '</svg><p>You’re on the list! I’ll be in touch.</p>';
-      form.replaceWith(success);
-      // (Later: POST `value` to a mailing-list endpoint here.)
+      if (!form.action) {
+        // No real endpoint wired up yet — nothing to submit to.
+        showError('Signups aren’t connected yet — try again soon.');
+        return;
+      }
+
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch(form.action, {
+        method: form.method || 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(form),
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data && data.status === 'success') {
+            showSuccess();
+            return;
+          }
+          var message =
+            (data && data.errors && data.errors.messages && data.errors.messages[0]) ||
+            'Something went wrong — please try again.';
+          showError(message);
+          if (submitBtn) submitBtn.disabled = false;
+        })
+        .catch(function () {
+          showError('Couldn’t reach the server — please try again.');
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
 
-    if (input && errorEl) {
-      input.addEventListener('input', function () {
-        errorEl.textContent = '';
-      });
-    }
-  }
+    input.addEventListener('input', function () {
+      showError('');
+    });
+  });
 })();
