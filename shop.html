@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Shop (Draft Preview) — Sara Oba</title>
+  <meta name="description" content="Shop hand-drawn art prints, stickers, postcards, and zines by Australia-based illustrator Sara Oba." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ─── Nav ─── -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html">Sara Oba</a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="index.html#home">Home</a>
+        <a class="nav__link" href="index.html#gallery">Gallery</a>
+        <a class="nav__link" href="index.html#about">About</a>
+        <a class="nav__link is-active" href="shop.html">Shop</a>
+        <a class="nav__cara" href="https://cara.app/sopiece" target="_blank" rel="noopener noreferrer">
+          Cara
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M 2 10 L 10 2 M 4 2 L 10 2 L 10 8" stroke="#1c1714" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </nav>
+
+      <button class="nav__burger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="mobile-menu">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#about">About</a>
+      <a href="shop.html">Shop</a>
+      <a class="nav__mobile-cara" href="https://cara.app/sopiece" target="_blank" rel="noopener noreferrer">Find me on Cara ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ─── Draft Preview Banner ─── -->
+    <div class="shop-draft-banner">
+      <div class="wrap shop-draft-banner__inner">
+        <span class="shop-draft-banner__badge">Draft Preview</span>
+        <p>Products are being prepared — public visitors still see the <strong>Coming Soon</strong> overlay on the <a href="index.html#shop">home page</a>.</p>
+      </div>
+    </div>
+
+    <!-- ─── Shop Header & Filters ─── -->
+    <section class="section shop-hero">
+      <div class="wrap">
+        <div class="shop-hero__head">
+          <div>
+            <div class="tag-pill">
+              <span class="dot"></span>
+              <span class="label">opening soon · preview</span>
+            </div>
+            <h1>Take a little <em>warmth</em> home</h1>
+            <svg class="squiggle" width="120" height="12" viewBox="0 0 120 12" fill="none" aria-hidden="true">
+              <path d="M 0 6 Q 12 1 24 6 Q 36 11 48 6 Q 60 1 72 6 Q 84 11 96 6 Q 108 1 120 6" stroke="#d4552a" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+            <p class="note">
+              Archival fine-art prints, weatherproof vinyl stickers, keepsake postcards, and small-batch zines crafted from original hand-drawn illustrations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="shop-filters" role="tablist" aria-label="Product categories" data-shop-filters>
+          <button class="shop-filter is-active" type="button" role="tab" aria-selected="true" data-filter="all">
+            All Items <span class="shop-filter__count">8</span>
+          </button>
+          <button class="shop-filter" type="button" role="tab" aria-selected="false" data-filter="prints">
+            Art Prints <span class="shop-filter__count">4</span>
+          </button>
+          <button class="shop-filter" type="button" role="tab" aria-selected="false" data-filter="stickers">
+            Stickers <span class="shop-filter__count">2</span>
+          </button>
+          <button class="shop-filter" type="button" role="tab" aria-selected="false" data-filter="postcards">
+            Postcards <span class="shop-filter__count">1</span>
+          </button>
+          <button class="shop-filter" type="button" role="tab" aria-selected="false" data-filter="zines">
+            Zines <span class="shop-filter__count">1</span>
+          </button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="shop-grid" data-shop-grid>
+
+          <!-- 1: Art Print -->
+          <article class="product-card" data-category="prints">
+            <div class="product-card__media" style="background-color:#e8c0aa;">
+              <span class="product-card__tag">Art Print</span>
+              <span class="product-card__status">Coming Soon</span>
+              <img src="images/gardening-master-framed.jpg" alt="Gardening Master fine art print" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__head">
+                <h3>Gardening Master Print</h3>
+                <span class="product-card__price">$28</span>
+              </div>
+              <p class="product-card__spec">A4 / A5 · 310gsm museum cotton rag</p>
+              <p class="product-card__desc">Archival giclée print capturing every watercolour wash and fine ink detail from the Furry Friends Series.</p>
+              <div class="product-card__footer">
+                <a class="btn btn--paper product-card__btn" href="#shop-notify">Notify when ready</a>
+                <a class="product-card__link" href="artwork_individual/gardening-master.html">View story →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2: Art Print -->
+          <article class="product-card" data-category="prints">
+            <div class="product-card__media" style="background-color:#e8c888;">
+              <span class="product-card__tag">Art Print</span>
+              <span class="product-card__status">Coming Soon</span>
+              <img src="images/net-pleasure-framed.jpg" alt="Net Pleasure fine art print" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__head">
+                <h3>Net Pleasure Print</h3>
+                <span class="product-card__price">$28</span>
+              </div>
+              <p class="product-card__spec">A4 / A5 · 310gsm museum cotton rag</p>
+              <p class="product-card__desc">Warm, sun-dappled tones printed on textured fine-art paper with a generous border for easy framing.</p>
+              <div class="product-card__footer">
+                <a class="btn btn--paper product-card__btn" href="#shop-notify">Notify when ready</a>
+                <a class="product-card__link" href="artwork_individual/net-pleasure.html">View story →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3: Art Print -->
+          <article class="product-card" data-category="prints">
+            <div class="product-card__media" style="background-color:#c4d8a0;">
+              <span class="product-card__tag">Art Print</span>
+              <span class="product-card__status">Coming Soon</span>
+              <img src="images/work-with-tea.jpg" alt="Work with Tea fine art print" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__head">
+                <h3>Work with Tea Print</h3>
+                <span class="product-card__price">$26</span>
+              </div>
+              <p class="product-card__spec">A4 / A5 · 310gsm museum cotton rag</p>
+              <p class="product-card__desc">A cosy companion for your desk or reading nook, celebrating quiet focus and a warm cup of tea.</p>
+              <div class="product-card__footer">
+                <a class="btn btn--paper product-card__btn" href="#shop-notify">Notify when ready</a>
+                <a class="product-card__link" href="artwork_individual/work-with-tea.html">View story →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4: Art Print -->
+          <article class="product-card" data-category="prints">
+            <div class="product-card__media" style="background-color:#b4c8e0;">
+              <span class="product-card__tag">Art Print</span>
+              <span class="product-card__status">Coming Soon</span>
+              <img src="images/lets-be-fishie-final.jpg" alt="Let's be fishie! fine art print" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__head">
+                <h3>Let's be fishie! Print</h3>
+                <span class="product-card__price">$26</span>
+              </div>
+              <p class="product-card__spec">A4 / A5 · 310gsm museum cotton rag</p>
+              <p class="product-card__desc">Playful storytelling from the Little Reminder Series, reproduced with rich pigment inks.</p>
+              <div class="product-card__footer">
+                <a class="btn btn--paper product-card__btn" href="#shop-notify">Notify when ready</a>
+                <a class="product-card__link" href="artwork_individual/lets-be-fishie.html">View story →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5: Stickers -->
+          <article class="product-card" data-category="stickers">
+            <div class="product-card__media" style="background-color:#e8e0b8;">
+              <span class="product-card__tag">Stickers</span>
+              <span class="product-card__status">Coming Soon</span>
+              <img src="images/achiever-final.jpg" alt="Little Reminder die-cut sticker pack" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__head">
+                <h3>Little Reminder Sticker Pack</h3>
+                <span class="product-card__price">$12</span>
+              </div>
+              <p class="product-card__spec">Set of 4 · Matte weatherproof vinyl</p>
+              <p class="product-card__desc">Thick die-cut vinyl stickers featuring Achiever and friends — made for sketchbooks, laptops, and water bottles.</p>
+              <div class="product-card__footer">
+                <a class="btn btn--paper product-card__btn" href="#shop-notify">Notify when ready</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6: Stickers -->
+          <article class="product-card" data-category="stickers">
+            <div class="product-card__media" style="background-color:#e8c0aa;">
+              <span class="product-card__tag">Stickers</span>
+              <span class="product-card__status">Coming Soon</span>
+              <div class="product-card__placeholder" aria-hidden="true">
+                <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                  <rect x="14" y="14" width="44" height="44" rx="12" fill="#fdf7f0" stroke="#1c1714" stroke-width="2.2" />
+                  <circle cx="36" cy="34" r="11" fill="#e8c888" stroke="#1c1714" stroke-width="2" />
+                  <path d="M 28 46 Q 36 52 44 46" stroke="#d4552a" stroke-width="2.2" stroke-linecap="round" />
+                </svg>
+                <span>Product photo coming soon</span>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__head">
+                <h3>Furry Friends Kiss-Cut Sheet</h3>
+                <span class="product-card__price">$10</span>
+              </div>
+              <p class="product-card__spec">A6 sheet · 8 peel-off mini illustrations</p>
+              <p class="product-card__desc">A collector sheet of hand-drawn critters, garden tools, and teacup motifs on soft-touch paper vinyl.</p>
+              <div class="product-card__footer">
+                <a class="btn btn--paper product-card__btn" href="#shop-notify">Notify when ready</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7: Postcards -->
+          <article class="product-card" data-category="postcards">
+            <div class="product-card__media" style="background-color:#a8c8c0;">
+              <span class="product-card__tag">Postcards</span>
+              <span class="product-card__status">Coming Soon</span>
+              <img src="images/unforgotten-truth-framed.jpg" alt="Our Buddies Postcard Set" />
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__head">
+                <h3>Our Buddies Postcard Set</h3>
+                <span class="product-card__price">$16</span>
+              </div>
+              <p class="product-card__spec">Set of 6 · A6 · 350gsm uncoated card</p>
+              <p class="product-card__desc">All six signature illustrations printed on heavy, pen-friendly cardstock — ready to mail to a loved one or pin to your wall.</p>
+              <div class="product-card__footer">
+                <a class="btn btn--paper product-card__btn" href="#shop-notify">Notify when ready</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8: Zines -->
+          <article class="product-card" data-category="zines">
+            <div class="product-card__media" style="background-color:#c4d8a0;">
+              <span class="product-card__tag">Zine</span>
+              <span class="product-card__status">Coming Soon</span>
+              <div class="product-card__placeholder" aria-hidden="true">
+                <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                  <path d="M 18 16 L 36 20 L 54 16 L 54 54 L 36 58 L 18 54 Z" fill="#fdf7f0" stroke="#1c1714" stroke-width="2.2" stroke-linejoin="round" />
+                  <line x1="36" y1="20" x2="36" y2="58" stroke="#1c1714" stroke-width="2" />
+                  <path d="M 23 30 L 31 32 M 23 37 L 31 39 M 41 32 L 49 30 M 41 39 L 49 37" stroke="#d4552a" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <span>Cover reveal coming soon</span>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__head">
+                <h3>Sketchbook Notes Vol. 1</h3>
+                <span class="product-card__price">$22</span>
+              </div>
+              <p class="product-card__spec">24 pages · A5 saddle-stitched · First edition</p>
+              <p class="product-card__desc">Behind-the-scenes pencil roughs, envelope doodles, colour studies, and the quiet stories behind each piece.</p>
+              <div class="product-card__footer">
+                <a class="btn btn--paper product-card__btn" href="#shop-notify">Notify when ready</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Launch Notification Signup ─── -->
+    <section id="shop-notify" class="section section--paper">
+      <div class="wrap">
+        <div class="coming-soon shop-notify-card">
+          <div class="coming-soon__emoji">💌</div>
+          <h3>First dibs when we <em>open</em></h3>
+          <svg class="squiggle" width="80" height="12" viewBox="0 0 80 12" fill="none" aria-hidden="true">
+            <path d="M 0 6 Q 8 1 16 6 Q 24 11 32 6 Q 40 1 48 6 Q 56 11 64 6 Q 72 1 80 6" stroke="#d4552a" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+          <p>
+            Small-batch prints and zines will launch in limited quantities. Leave your email and I'll send a single note as soon as the shop doors open.
+          </p>
+
+          <form data-notify novalidate action="https://app.kit.com/forms/9988211/subscriptions" method="post">
+            <div class="notify__row">
+              <input type="email" name="email_address" placeholder="your@email.com" aria-label="Email address" required />
+              <button type="submit">Get Notified</button>
+            </div>
+            <p class="notify__error" role="alert"></p>
+          </form>
+          <p class="notify__powered"><a href="https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic" target="_blank" rel="nofollow noopener">Built with Kit</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <p>Sara Oba</p>
+        <p>Hand-drawn illustration · <span data-year>2026</span></p>
+        <p>All rights reserved. No part of these artworks may be reproduced, distributed, downloaded, or used to train artificial intelligence models without prior written permission.</p>
+      </div>
+
+      <a class="footer__cara" href="https://cara.app/sopiece" target="_blank" rel="noopener noreferrer">
+        <img class="footer__cara-logo" src="images/cara-logo.png" width="20" height="20" alt="" />
+        Follow on Cara
+        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M 2 10 L 10 2 M 4 2 L 10 2 L 10 8" stroke="#f5ede0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+
+      <nav class="footer__links" aria-label="Footer">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#shop">Shop</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.querySelectorAll('[data-year]').forEach(function (n) { n.textContent = new Date().getFullYear(); });</script>
+</body>
+</html>

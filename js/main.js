@@ -128,4 +128,30 @@
       showError('');
     });
   });
+
+  /* ── Shop category filters ────────────────────────────────────────────── */
+  var filterBar = document.querySelector('[data-shop-filters]');
+  var shopGrid = document.querySelector('[data-shop-grid]');
+
+  if (filterBar && shopGrid) {
+    var filterButtons = filterBar.querySelectorAll('[data-filter]');
+    var productCards = shopGrid.querySelectorAll('[data-category]');
+
+    filterButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var target = btn.getAttribute('data-filter');
+
+        filterButtons.forEach(function (b) {
+          var active = b === btn;
+          b.classList.toggle('is-active', active);
+          b.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+
+        productCards.forEach(function (card) {
+          var match = target === 'all' || card.getAttribute('data-category') === target;
+          card.hidden = !match;
+        });
+      });
+    });
+  }
 })();
